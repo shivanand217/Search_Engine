@@ -169,27 +169,9 @@ class crawler:
             print(pages)
             
 class searcher:
-
+    
     def __init__(self, dbname):
         self.con = sqlite3.connect(db_name)
 
     def __del__(self):
-        self.con.close()
-
-    def get_match_rows(self, q):
-
-        field_list = 'w0.url_id'
-        table_list = ''
-        clause_list = ''
-        word_ids = []
-
-        words = q.split()
-        table_number = 0
-
-        for word in words:
-            word_row = self.con.execute("select rowid from word_list \
-                    where word='%s'" % word)
-            u = word_row.fetchone()
-
-            if word_row is not None:
-                
+        self.con.close() 
