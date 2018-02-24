@@ -9,7 +9,7 @@
   - [ ] Optimization with neural network for fast searching
   
 ## Contributing Guides :crown:
-##### Any Contributions are welcome ..
+##### Any Contributions are welcome
   
   
   
